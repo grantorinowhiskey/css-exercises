@@ -1,0 +1,19 @@
+.uneven {
+    background-color: rgb(254, 204, 203);
+    font-family: "Verdana", "DejaVu Sans", sans-serif;
+}
+
+#nr2 {
+    color:hsl(213, 76%, 55%);
+    font-size: 36px;
+}
+
+.nr3 {
+    font-size: 24px;
+}
+
+#nr4 {
+    background-color: #90EE90;
+    font-size: 24px;
+    font-weight: 700;
+}
