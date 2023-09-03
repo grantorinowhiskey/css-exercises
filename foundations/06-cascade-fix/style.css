@@ -8,20 +8,12 @@ body {
   font-weight: 800;
 }
 
-.small-para {
-  font-size: 14px;
-  font-weight: 800;
-}
 
 .para {
   font-size: 22px;
 }
 
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
+/* .confirm selector removed */ 
 
 .button {
   background-color: rgb(255, 255, 255);
@@ -29,14 +21,39 @@ body {
   font-size: 20px;
 }
 
-.child {
-  color: rgb(0, 0, 0);
-  font-weight: 800;
-  font-size: 14px;
-}
+/* .child removed and replaced at the bottom */
 
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
 }
+
+/* small-para moved to the bottom, placing it after
+.para selector to take advantage of rule order,
+both having the same specificity. */ 
+
+.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* Replacement for .confirm selector with ID instead */
+
+#confirm-button {
+  background: green;
+  color: white;
+  font-weight: bold;
+}
+
+/* Replacement for .child rule. Added selector to create a
+descendant combinator.
+ */
+
+ div .child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+ }
+
+ 
